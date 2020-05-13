@@ -1,0 +1,12 @@
+{
+  "development": {
+    "apiUrl": "https://andresreyes.herokuapp.com",
+    "contentApiKey": "aa28cc37bdb3e869cc3b08d1a4",
+    "version": "v2"
+  },
+  "production": {
+    "apiUrl": "https://andresreyes.herokuapp.com",
+    "contentApiKey": "aa28cc37bdb3e869cc3b08d1a4",
+    "version": "v2"
+  }
+}
