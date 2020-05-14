@@ -30,19 +30,22 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
             </Helmet>
-
             <div className="viewport">
-
                 <div className="viewport-top">
-                    {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+                    <header className="site-head">
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
                                     <Link to="/">
                                         {site.logo ?
-                                            <img className="site-logo" src={site.logo} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                            <div className="site-header-top">
+                                                <img className="site-logo" src={site.logo} alt={site.title} />
+                                                <div className="site-header-link">
+                                                    <h1 className="site-banner-title">{site.title}</h1>
+                                                    <p className="site-banner-desc">{site.description}</p>
+                                                </div>
+                                            </div> :
+                                            <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>
