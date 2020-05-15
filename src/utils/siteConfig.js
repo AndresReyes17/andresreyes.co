@@ -1,16 +1,13 @@
 module.exports = {
-    siteUrl: `https://andresreyes.herokuapp.com`, // Site domain. Do not include a trailing slash!
-
-    postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
-
-    siteTitleMeta: `Andres Reyes`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `Mi sitio Web creado a la medida`, // This allows an alternative site description for meta data for pages.
-
-    shareImageWidth: 1000, // Change to the width of your default share image
-    shareImageHeight: 523, // Change to the height of your default share image
-
-    shortTitle: `Ghost`, // Used for App manifest e.g. Mobile Home Screen
-    siteIcon: `favicon.png`, // Logo in /static dir used for SEO, RSS, and App manifest
-    backgroundColor: `#e9e9e9`, // Used for Offline Manifest
-    themeColor: `#15171A`, // Used for Offline Manifest
+    siteUrl: `https://andresreyes.herokuapp.com`, 
+    postsPerPage: 12,
+    siteTitleMeta: `Andres Reyes`, 
+    siteDescriptionMeta: `Mi sitio Web creado a la medida`,
+    shareImageWidth: 1000,
+    shareImageHeight: 523,
+    shortTitle: `Ghost`,
+    siteIcon: `favicon.png`,
+    backgroundColor: `#e9e9e9`, 
+    themeColor: `#15171A`,
 }
+;

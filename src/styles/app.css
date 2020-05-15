@@ -491,7 +491,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    color: var(--color-base);
+    color: white;
     line-height: 1.15;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -571,6 +571,7 @@ h6 {
     margin: 0 auto;
     font-size: 2rem;
     line-height: 1.7em;
+    color: white;
 }
 
 .content-body {
@@ -580,16 +581,91 @@ h6 {
 }
 
 .post-full-content {
-    max-width: 720px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2em;
+    grid-row-gap: .5em;
     margin: 0 auto;
-    background: #fff;
+}
+
+@media (max-width: 680px) {
+    .post-full-content  {
+        grid-template-columns: 1fr;
+    }
+}
+
+.post-disqus {
+    border-top: 1px solid var(--color-secondary);
+}
+
+#disqus_thread {
+    margin: 1em 0 0 0;
 }
 
 .post-feature-image img {
     margin: 0 0 3vw;
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
+}
+
+.post-author-profile {
+    font-size: 16px;
+}
+
+.post-author-profile h2 {
+    font-size: 16px;
+}
+
+.post-author-profile a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 0 12px;
+}
+.post-date {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.post-tags a {
+    font-size: 13px;
+    color: var(--color-secondary);;
+    margin: 0 .4em 0 0;
+}
+
+.post-coffee {
+    margin: 0 0 1em 0;
+}
+
+.post-coffee img {
+    height: 51px !important;
+    width: 217px !important;
+    border-radius: 6px;
+}
+
+.post-follow {
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    background-color: #1b95e0;
+    display: inline-block;
+    margin: 1em 0;
+}
+.post-follow a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 0 .5em 0 0;
+}
+
+.post-follow img {
+    margin: 2px .5em 0 .5em;
 }
 
 .content-body h1,
@@ -606,7 +682,6 @@ h6 {
     font-size: 3.4rem;
     font-weight: 700;
 }
-
 @media (max-width: 500px) {
     .content-body h1 {
         font-size: 2.8rem;
@@ -617,7 +692,6 @@ h6 {
     margin: 0 0 0.8em;
     font-size: 5rem;
 }
-
 @media (max-width: 500px) {
     .content-title {
         margin: 0.8em 0;
@@ -633,7 +707,6 @@ h6 {
     font-size: 3.2rem;
     font-weight: 700;
 }
-
 @media (max-width: 500px) {
     .content-body h2 {
         font-size: 2.6rem;
@@ -645,7 +718,6 @@ h6 {
     font-size: 2.8rem;
     font-weight: 700;
 }
-
 @media (max-width: 500px) {
     .content-body h3 {
         font-size: 2.2rem;
@@ -657,7 +729,6 @@ h6 {
     font-size: 2.4rem;
     font-weight: 700;
 }
-
 @media (max-width: 500px) {
     .content-body h4 {
         font-size: 2.2rem;
@@ -669,7 +740,7 @@ h6 {
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    font-family: Georgia, serif;
+    font-family: Georgia,serif;
     color: var(--color-primary);
     font-style: italic;
     font-size: 3.2rem;
@@ -695,7 +766,7 @@ h6 {
     line-height: 1.4em;
     white-space: pre-wrap;
     padding: 20px;
-    background: var(--color-base);
+    background: #1c2938;
     color: #fff;
     border-radius: 12px;
 }
@@ -716,7 +787,7 @@ h6 {
     display: inline-block;
     padding: 5px 10px;
     color: #fff;
-    opacity: 0.7;
+    opacity: .7;
 }
 
 @media (max-width: 680px) {
@@ -1262,6 +1333,7 @@ h6 {
     margin: 0;
     width: 100%;
     height: 100%;
+    box-shadow: white 0px 0px 0px 400px inset;
 }
 
 .kg-gallery-row:not(:first-of-type) {
