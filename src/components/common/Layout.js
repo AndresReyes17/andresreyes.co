@@ -24,7 +24,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
 
   return (
     <>
-      <Helmet>
+      <Helmet >
         <html lang={site.lang} />
         <style type="text/css">{`${site.codeinjection_styles}`}</style>
         <body className={bodyClass} />
@@ -52,7 +52,13 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                   {site.twitter && <a href={twitterUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                   {site.facebook && <a href={facebookUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
                   <a className="site-nav-item" href="http://github.com/andresReyes17" target="_blank" rel="noopener noreferrer">
-                    <img className="site-nav-icon" src="/images/icons/github.png" alt="Andres Reyes - Github" />
+                    <img className="site-nav-icon" src="/images/icons/instagram.svg" alt="Andres Reyes - Github" />
+                  </a>
+                  <a className="site-nav-item" href="http://github.com/andresReyes17" target="_blank" rel="noopener noreferrer">
+                    <img className="site-nav-icon" src="/images/icons/github.svg" alt="Andres Reyes - Github" />
+                  </a>
+                  <a className="site-nav-item" href="http://github.com/andresReyes17" target="_blank" rel="noopener noreferrer">
+                    <img className="site-nav-icon" src="/images/icons/youtube.svg" alt="Andres Reyes - Github" />
                   </a>
                 </div>
               </div>
@@ -79,7 +85,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
             <div className="site-foot-nav container">
               <div className="site-foot-nav-left">
                 © 2020 por andresreyes.co. All rights reserved
-                            </div>
+                </div>
               <div className="site-foot-nav-right">
                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
               </div>
