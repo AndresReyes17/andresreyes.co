@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: `https://andresreyes.herokuapp.com`, 
+    siteUrl: `https://andresreyes.co`, 
     postsPerPage: 12,
     siteTitleMeta: `Andres Reyes`, 
     siteDescriptionMeta: `Mi sitio Web creado a la medida`,
