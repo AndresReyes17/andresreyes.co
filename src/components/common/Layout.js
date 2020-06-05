@@ -88,7 +88,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
           <footer className="site-foot">
             <div className="site-foot-nav container">
               <div className="site-foot-nav-left">
-                © 2020 por andresreyes.co. All rights reserved
+                © 2020 por andresreyes.co 💻 All rights reserved
                 </div>
               <div className="site-foot-nav-right">
                 <Navigation data={site.navigation} navClass="site-foot-nav-item" />
